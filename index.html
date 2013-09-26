@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<!-- Meta tags -->
+	    <meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no initial-scale = 1.0,maximum-scale = 1.0" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+			<!-- Some CSS here -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+			<!-- libraries and app.js -->
+		<script src="lib/jquery-1.9.1.min.js"></script>
+		<script src="lib/jquery.mobile-1.3.2.js"></script>
+		<script src="lib/moment.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="index">
+		  <div data-role="header">
+			  <h1>Be Safe!</h1>
+			  <a href="index.html" data-icon="gear" data-iconpos="notext" class="ui-btn-right"></a>
+			</div>
+		  <div data-role="content">
+		  		<!-- create the collapsible data entry form -->
+		    <div data-role="collapsible-set" data-content-theme="d" id="set">
+			    <div data-role="collapsible" id="set1" data-collapsed="true">
+			        <h3>Add Details</h3>
+			        <input type="text" name="text-basic" id="text-basic" placeholder="Where are you heading?" value="">
+			        <input type="text" name="text-basic" id="text-basic" placeholder="Enter Vehicle Number" value="">
+			        <p>
+					    <a href="#" data-role="button" data-mini="true" data-inline="true">Take a Snap</a>
+					    <a href="#" data-role="button" data-mini="true" data-inline="true" data-icon="check">Save Details</a>
+					</p>
+			    </div>
+			</div>
+				<!-- create the templated data view -->
+			<ul data-role="listview" data-inset="true">
+			    <li data-role="list-divider">Friday, September 8, 2013 <span class="ui-li-count">2</span></li>
+			    <li>
+			        <p><strong>BTM to Richmond</strong></p>
+			        <p>KA-12345</p>
+			        <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+			    </a></li>
+			    <li><a href="index.html">
+			        <p><strong>Richmond to BTM at </strong></p>
+			        <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+			    </li>
+			</ul>
+
+		  </div>
+		</div>
+		<div data-role="footer">
+		    <h1>This is a test footer</h1>
+		  </div>
+		</div>
+
+	</body>
+</html>
