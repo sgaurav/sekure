@@ -1,0 +1,8 @@
+.ui-li-aside.ui-li-desc {
+	width: 20%;
+}
+
+p.ui-li-desc {
+	width: 75%;
+	margin: 0.3em 0 0.1em;
+}
