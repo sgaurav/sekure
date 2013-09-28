@@ -28,14 +28,16 @@
 		  	<div data-role="content">
 		  			<!-- create the collapsible data entry form -->
 			    <div data-role="collapsible-set" data-content-theme="d" id="set">
-				    <div data-role="collapsible" id="set1" data-collapsed="true">
+				    <div data-role="collapsible" id="set1" >
 				        <h3>Add Details</h3>
+				        <p>
 				        <input type="text" id="journeyDetail" placeholder="Where are you heading?" value="" required>
 				        <input type="text" id="cabDetail" placeholder="Enter Vehicle Number" value="" required pattern="^[A-Za-z0-9_]{1,15}$">
 				        <input type="text" value="" id="snapURI" data-role="none">
-				        <p>
+				        <!-- <p> -->
 						    <a href="#" data-role="button" data-mini="true" data-inline="true">Take a Snap</a>
 						    <a href="#" data-role="button" data-mini="true" data-inline="true" data-icon="check" id="saveDetailsButton">Save Details</a>
+						<!-- </p> -->
 						</p>
 				    </div>
 				</div>
@@ -79,6 +81,9 @@
 					    </li>
 					</ul>
 				</div>
+				<div data-role="popup" id="popupMessage"  class="ui-content" data-theme="e" data-overlay-theme="a" data-transition="slideup">
+      				
+    			</div>
 		  	</div>
 		</div>
 	</body>
