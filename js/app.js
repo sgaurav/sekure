@@ -13,7 +13,13 @@ $(function(){
    		jQuery(this).children().next().slideUp(200);
 	});
 
-	//TODO Load previously saved data
+		//TODO create this at page init
+	var localData = localStorage;
+	var length = localStorage.length;
+
+	for(var i=0; i<length; i++) {
+		var tempLocalData = localStorage[i];
+	}
 
 
 		// Add new details
@@ -78,9 +84,8 @@ $(function(){
 		}
 	});
 
-	//TODO create a clear all
 	$.subscribe('/clearAll/', function(){
-			//function to clear all images stored
+			//TODO function to clear all images stored
 		localStorage.clear();
 		jQuery('.wrapper').empty();
 	});
