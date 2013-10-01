@@ -6,12 +6,12 @@ $(function(){
 	wrapper = jQuery('#wrapper');
 
 		//a dirty hack to animate collapsible
-	jQuery('#set1').on('expand', function () {
-	    jQuery(this).children().next().hide();
-	    jQuery(this).children().next().slideDown(200);
-	}).on('collapse', function () {
-   		jQuery(this).children().next().slideUp(200);
-	});
+	// jQuery('#set1').on('expand', function () {
+	//     jQuery(this).children().next().hide();
+	//     jQuery(this).children().next().slideDown(200);
+	// }).on('collapse', function () {
+ //   		jQuery(this).children().next().slideUp(200);
+	// });
 
 		//TODO create this at page init
 	var localData = localStorage;
